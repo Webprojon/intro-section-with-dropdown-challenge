@@ -12,6 +12,7 @@
   /* Fonts */
   --font-family: "Epilogue", sans-serif;
   --font-wght-700: 700;
+  --font-wght-500: 500;
 }
 
 /* GENERAL CSS */
@@ -47,6 +48,7 @@ body {
   margin-left: 2.5rem;
   display: flex;
   justify-content: space-between;
+  align-items:flex-end;
   width: 30%;
 }
 
@@ -121,19 +123,18 @@ body {
   border: none;
   cursor: pointer;
   font-size: 0.9rem;
+  text-decoration: none;
   color: var(--medium-gray);
   font-weight: var(--font-wght-700);
 }
 
-.btn:active,
-.btn a:active {
-  color: var(--almost-black);
-  transition: var(--trans);
+a {
+  font-weight: var(--font-wght-500);
 }
 
-.btn a {
-  text-decoration: none;
-  color: var(--medium-gray);
+.btn:active {
+  color: var(--almost-black);
+  transition: var(--trans);
 }
 
 .register-btn {
